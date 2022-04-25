@@ -1,0 +1,161 @@
+@font-face {
+  font-family: ZenKurenaido;
+  src: url(fonts/ZenKurenaido-Regular.ttf);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9BD1C1;
+  color: #818286;
+  font-family: ZenKurenaido, Arial, Helvetica, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  /*position: relative; 
+  z-index: 2;*/
+}
+
+.wrap {
+  padding-left: 10%;
+  padding-right: 10%;
+  min-height: 50vh;
+}
+
+.wrap_white {
+  background-color: #ffffff;
+  min-height: 50vh;
+}
+
+p {
+    font-size: 1.5rem;
+  }
+
+.img {
+  width: 100%;
+}
+
+.camera_layout{
+  background-color: #E7B63F;
+  border-radius: 80%;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.menu {
+  padding: 8px;
+}
+
+.menu-link, .footer-link {
+  text-decoration: none;
+  color: #818286;
+  font-size: 1.5rem;
+}
+
+.menu-link:hover, .footer-link:hover {
+  color: #818286;
+  font-weight: bold;
+}
+
+.description, .list-item {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.list-item {
+  list-style-type: none;
+}
+
+.purpose {
+  position: relative;
+}
+
+.img_purpose {
+  background: url('img/04.png') no-repeat;
+  background-size: 100%;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: -1%;
+  right: -28%
+}
+
+.btn {
+  background-color: #E7B63F;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: #F7DC43;
+  font-weight: bold;
+  color: #818286;
+}
+
+.video {
+  width: 80%;
+  height: 50vh;
+}
+
+.results {
+  background-color: #9BD1C1;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon, .btn-indicators {
+  background-color: #818286;
+}
+
+.form-label {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 575px) {
+  .video{
+    width: 500px;
+    height: 282px;
+  }
+
+  .img_purpose {
+  width: 40%;
+  right: -10%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .img_purpose {
+  width: 36%;
+  right: -11%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img_purpose {
+  width: 26%;
+  right: -10%;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu {
+  padding: 30px;
+  }
+
+  .img_purpose {
+  width: 24%;
+  right: -10%;
+  }
+}
